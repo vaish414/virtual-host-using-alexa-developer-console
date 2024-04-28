@@ -87,7 +87,7 @@ const introanantHandler = {
     handle(handlerInput) {
         const speakOutput = `
         <amazon:emotion name="excited" intensity="high">
-            <p>Ladies and gentlemen, it is my great pleasure to welcome you to this auspicious occasion - the inauguration of ANANTA 2024. Today, we come together to mark a new beginning, to celebrate the fruits of our labor, and to set our sights on a bright and promising future.</p>
+            <p>Ladies and gentlemen, it is my great pleasure to welcome you to this auspicious occasion - the inauguration of FEST 2024. Today, we come together to mark a new beginning, to celebrate the fruits of our labor, and to set our sights on a bright and promising future.</p>
         </amazon:emotion>
         `
         const DOCUMENT_ID = "anantalogo"
@@ -207,10 +207,10 @@ const classicaldanceHandler = {
     handle(handlerInput) {
         const speakOutput = `
         <amazon:emotion name="excited" intensity="high">
-            <p>Sure! Keeping this soulful thought in mind, we present to you a graceful performance by abcd efgh to welcome you all in the most elegant way.</p>
+            <p>Sure! Keeping this soulful thought in mind, we present to you a graceful performance by abcd to welcome you all in the most elegant way.</p>
         </amazon:emotion>
         `
-    //     const DOCUMENT_ID = "anantalogo"
+    //     const DOCUMENT_ID = "logo"
     //     const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "documentToken") => {
     //         return {
     //             type: "Alexa.Presentation.APL.RenderDocument",
@@ -267,10 +267,10 @@ const dancereviewHandler = {
     handle(handlerInput) {
         const speakOutput = `
         <amazon:emotion name="excited" intensity="high">
-            <p>Well, That performance was the perfect way to commence this beautiful ceremony. Thank you, urvee, for your exceptional performance.</p>
+            <p>Well, That performance was the perfect way to commence this beautiful ceremony. Thank you, abcd, for your exceptional performance.</p>
         </amazon:emotion>
         `
-    //     const DOCUMENT_ID = "anantalogo"
+    //     const DOCUMENT_ID = "logo"
     //     const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "documentToken") => {
     //         return {
     //             type: "Alexa.Presentation.APL.RenderDocument",
@@ -327,11 +327,11 @@ const chiefguestHandler = {
     handle(handlerInput) {
         const speakOutput = `
         <amazon:emotion name="excited" intensity="high">
-            <p>Sure, First we have with us our chief guest ABC sitting over here. He is the Mission Director at Atal Innovation Mission. Niti Aayog, Government of India and Academic Director at MIT, USA. His focus lies in leveraging his expertise in engineering and innovation to address the intersection of human and technological challenges.</p>
+            <p>Sure, First we have with us our chief guest ABC sitting over here. He is the Mission Director at pqrs Mission. His focus lies in leveraging his expertise in engineering and innovation to address the intersection of human and technological challenges.</p>
             
-            <p>Then we have our guest of honor DEF with over 25 years at Tata Consultancy Services, retired as Advisor in Human Resources in March 2022. His leadership roles included heading TCS IIIT (PPP) Relationships, Academic Interface Programme, and Corporate Learning facility. Additionally, he served on the boards of IIITs and ICT Academy of Kerala, chaired by the Union Minister of Education. Prior to TCS, he spent a decade at ISRO, contributing significantly to software evaluation and standards. DEF remains actively engaged in academia and has 46 years of diverse experience. </p>
+            <p>Then we have our guest of honor DEF with over 25 years at some company, retired as Advisor in uvwx. His leadership roles included heading JKLM, Academic Interface Programme, and Corporate Learning facility. Additionally, he served on the boards of ABCD chaired by the Union Minister of EFGH.</p>
             
-            <p>Then we have our distinguished guest GHI. He is the Founder and CEO of Phonon Communications private limited. He holds degrees in Electronics Engineering and an MBA from IIM Calcutta. Renowned for his expertise in service automation. He is regarded as a technology visionary. Additionally, he excels in concept sales and is recognized for his meticulous attention to detail. With exceptional analytical, management, and interpersonal skills, he is known as a highly capable and proficient manager.</p>
+            <p>Then we have our distinguished guest GHI. He is the Founder and CEO of LMNO private limited. He holds degrees in Electronics Engineering and an MBA from ABC University. Renowned for his expertise in service automation. He is regarded as a technology visionary. Additionally, he excels in concept sales and is recognized for his meticulous attention to detail. With exceptional analytical, management, and interpersonal skills, he is known as a highly capable and proficient manager.</p>
 
         </amazon:emotion>
         `
@@ -346,7 +346,7 @@ const chiefguestHandler = {
                     {
                         "primaryText": "",
                         "secondaryText": "",
-                        "imageSource": "https://firebasestorage.googleapis.com/v0/b/ananta-24-inaugral.appspot.com/o/dignitaries.png?alt=media&token=144a099f-0e3e-4bd1-9ca3-bf6704f73db3",
+                        "imageSource": "link to image",
                         "primaryAction": [
                             {
                                 "type": "SetValue",
@@ -357,7 +357,7 @@ const chiefguestHandler = {
                         ]
                     }
                 ],
-                "logoUrl": "https://firebasestorage.googleapis.com/v0/b/ananta-24-inaugral.appspot.com/o/dignitaries.png?alt=media&token=144a099f-0e3e-4bd1-9ca3-bf6704f73db3"
+                "logoUrl": "link to image"
             }
         };
 
@@ -371,126 +371,6 @@ const chiefguestHandler = {
             .getResponse();
     }
 };
-
-// const guestofhonorHandler = {
-//     canHandle(handlerInput) {
-//         return Alexa.getRequestType(handlerInput.requestEnvelope) === "IntentRequest"
-//             && Alexa.getIntentName(handlerInput.requestEnvelope) === "guestofhonor"
-//     },
-//     handle(handlerInput) {
-//         const speakOutput = `
-//         <amazon:emotion name="excited" intensity="high">
-//             <p>Doctor K KESAVASAMY is a Learner and an Educator. Previously he was a software scientist at ISRO and a member of TCS's advisory board, now serves on the Board of Governors of IIIT's.</p>
-//         </amazon:emotion>
-//         `
-//         const DOCUMENT_ID = "guestofhonor"
-//         const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "documentToken") => {
-//             return {
-//                 type: "Alexa.Presentation.APL.RenderDocument",
-//                 token: tokenId,
-//                 document: {
-//                     type: "Link",
-//                     src: "doc://alexa/apl/documents/" + aplDocumentId
-//                 },
-//                 datasources: dataSources
-//             }
-//         }
-//         const datasource = {
-//             "imageListData": {
-//                 "type": "object",
-//                 "objectId": "paginatedListSample",
-//                 "title": "",
-//                 "listItems": [
-//                     {
-//                         "primaryText": "",
-//                         "secondaryText": "",
-//                         "imageSource": "https://i.imgur.com/Z6ZE3wI.png",
-//                         "primaryAction": [
-//                             {
-//                                 "type": "SetValue",
-//                                 "componentId": "paginatedList",
-//                                 "property": "headerTitle",
-//                                 "value": "Home Garden 1 is selected"
-//                             }
-//                         ]
-//                     }
-//                 ],
-//                 "logoUrl": "https://i.imgur.com/VVd2M2i.png"
-//             }
-//         }
-        
-//         if (Alexa.getSupportedInterfaces(handlerInput.requestEnvelope)['Alexa.Presentation.APL']) {
-            
-//             const aplDirective = createDirectivePayload(DOCUMENT_ID, datasource);
-            
-//             handlerInput.responseBuilder.addDirective(aplDirective);
-//         }
-        
-//         return handlerInput.responseBuilder
-//             .speak(speakOutput)
-//             .getResponse();
-//     }
-// };
-
-// const distinguishedguestHandler = {
-//     canHandle(handlerInput) {
-//         return Alexa.getRequestType(handlerInput.requestEnvelope) === "IntentRequest"
-//             && Alexa.getIntentName(handlerInput.requestEnvelope) === "distinguishedguest"
-//     },
-//     handle(handlerInput) {
-//         const speakOutput = `
-//         <amazon:emotion name="excited" intensity="high">
-//             <p>Mister UJWAL MAKHIJA is the Founder and CEO of Phonon Communications private limited. He holds degrees in Electronics Engineering and an MBA from IIM Calcutta. Renowned for his expertise in service automation. He is regarded as a technology visionary. Additionally, he excels in concept sales and is recognized for his meticulous attention to detail. With exceptional analytical, management, and interpersonal skills, he is known as a highly capable and proficient manager.</p>
-//         </amazon:emotion>
-//         `
-//         const DOCUMENT_ID = "distinguishedguest"
-//         const createDirectivePayload = (aplDocumentId, dataSources = {}, tokenId = "documentToken") => {
-//             return {
-//                 type: "Alexa.Presentation.APL.RenderDocument",
-//                 token: tokenId,
-//                 document: {
-//                     type: "Link",
-//                     src: "doc://alexa/apl/documents/" + aplDocumentId
-//                 },
-//                 datasources: dataSources
-//             }
-//         }
-//         const datasource = {
-//             "imageListData": {
-//                 "type": "object",
-//                 "objectId": "paginatedListSample",
-//                 "title": "",
-//                 "listItems": [
-//                     {
-//                         "primaryText": "",
-//                         "secondaryText": "",
-//                         "imageSource": "https://i.imgur.com/Z6ZE3wI.png",
-//                         "primaryAction": [
-//                             {
-//                                 "type": "SetValue",
-//                                 "componentId": "paginatedList",
-//                                 "property": "headerTitle",
-//                                 "value": "Home Garden 1 is selected"
-//                             }
-//                         ]
-//                     }
-//                 ],
-//                 "logoUrl": "https://i.imgur.com/VVd2M2i.png"
-//             }
-//         }
-        
-//         if (Alexa.getSupportedInterfaces(handlerInput.requestEnvelope)['Alexa.Presentation.APL']) {
-            
-//             const aplDirective = createDirectivePayload(DOCUMENT_ID, datasource);
-            
-//             handlerInput.responseBuilder.addDirective(aplDirective);
-//         }
-        
-//         return handlerInput.responseBuilder
-//             .speak(speakOutput)
-//             .getResponse();
-//     }
-// };
 
 const HelpIntentHandler = {
     canHandle(handlerInput) {
