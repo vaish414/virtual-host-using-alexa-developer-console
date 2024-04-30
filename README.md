@@ -40,7 +40,6 @@ Once the project is set up and configured, it can be used to host various events
 3. Enjoy a seamless and engaging experience as the virtual host responds with relevant information and multimedia content, including live images captured via Firebase.
 
 ## Contributors
-
 - Vaishnavi Dave(https://github.com/vaish414)
 - Megh Patel(https://github.com/mdpatel702)
 
